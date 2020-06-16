@@ -1,1 +1,1 @@
-web: gunicorn FiberApp.wsgi
+web: gunicorn hello_world.wsgi
