@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'hello_world.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-ON_HEROKU = os.environ.get('ON_HEROKU')
+ON_HEROKU = True
 if ON_HEROKU:
     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
     django_heroku.settings(locals())
