@@ -1,1 +1,2 @@
-web: gunicorn hello_world.wsgi
+release: python manage.py migrate
+web: gunicorn hello_world.wsgi --log-file -
